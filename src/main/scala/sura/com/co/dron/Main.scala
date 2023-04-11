@@ -265,3 +265,29 @@ object Main {
     println("Nueva posición: %s".format(dronConNuevaPosicion))
   }
 }
+
+//TODO: SEGUNDA SOLUCION PARA EL EJERCICIO DEL DRON
+//object Dron {
+//  def main(args: Array[String]): Unit = {
+//    val commands = List("Arriba", "Derecha", "Arriba", "Izquierda", "Abajo", "Atrás", "Adelante")
+//    val finalPosition = executeCommands(commands)
+//    println(s"El dron comenzó en la posición (${List(0, 0, 0, 0, 0, 0).mkString(", ")})")
+//    println(s"El dron terminó en la posición (${finalPosition.mkString(", ")})")
+//  }
+//
+//  def executeCommands(commands: List[String]): List[Int] = {
+//    var position = List(0, 0, 0, 0, 0, 0)
+//    for (command <- commands) {
+//      command match {
+//        case "Arriba" => if (position(0) < 100) position = List(position(0) + 5, position(1), position(2), position(3), position(4), position(5))
+//        case "Abajo" => if (position(0) > -50) position = List(position(0) - 5, position(1), position(2), position(3), position(4), position(5))
+//        case "Derecha" => position = List(position(0), position(1) + 5, position(2), position(3), position(4), position(5))
+//        case "Izquierda" => position = List(position(0), position(1) - 5, position(2), position(3), position(4), position(5))
+//        case "Atrás" => position = List(position(0), position(1), position(2) - 5, position(3), position(4), position(5))
+//        case "Adelante" => position = List(position(0), position(1), position(2), position(3) + 5, position(4), position(5))
+//        case _ => // Ignorar comandos desconocidos
+//      }
+//    }
+//    position
+//  }
+//}
