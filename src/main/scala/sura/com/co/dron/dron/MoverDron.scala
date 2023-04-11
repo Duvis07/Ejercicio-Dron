@@ -36,7 +36,7 @@ object MoverDron extends MovimientosDron {
 
       posicionDron.copy(arriba = nuevaPosicionArriba, abajo = nuevaPosicionAbajo)
     } else {
-      println(s"Se omite movimiento hacia arriba porque ha superado el máximo de posiciones permitidas ${movimientoMaximoArriba}")
+      println("Se omite movimiento hacia arriba porque ha superado el máximo de posiciones permitidas %d".format(movimientoMaximoArriba))
       posicionDron
     }
   }
@@ -55,7 +55,7 @@ object MoverDron extends MovimientosDron {
 
       posicionDron.copy(arriba = nuevaPosicionArriba, abajo = nuevaPosicionAbajo)
     } else {
-      println(s"Se omite movimiento hacia abajo abajo porque ha superado el máximo de posiciones permitidas ${movimientoMaximoAbajo}")
+      println("Se omite movimiento hacia abajo abajo porque ha superado el máximo de posiciones permitidas %d".format(movimientoMaximoAbajo))
       posicionDron
     }
   }
